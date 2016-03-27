@@ -1,0 +1,72 @@
+<section class="blog-font blog-post">
+  <p>If you've worked with Rails, chances are that you've encountered both Ruby 
+  and JavaScript (JS). So how are these two separate programming languages similar? 
+  How are they different? Let's explore!</p>
+  
+  <h3>JS is a prototype-based language.</h3>
+  
+  <p>Before I explain prototypal inheritance, it's important to note that most 
+  object-oriented programming languages exhibit classical inheritance. This is where 
+  the programmer creates a class, which can create objects. As multiple objects 
+  can be created from a single class, and since classes can inherit from other classes, 
+  you can reuse quite a bit of code.</p>
+  
+  <p>In Ruby, you would create a class like this: </p>
+  
+  <pre><code>class Dog  
+  def initialize(breed, name)  
+    # Instance variables  
+    @breed = breed  
+    @name = name  
+  end  
+  
+  def bark  
+    puts 'Ruff! Ruff!'  
+  end  
+  
+  def display  
+    puts "I am of #{@breed} breed and my name is #{@name}"  
+  end
+end</code></pre>
+  
+  <p>But JS is a bit different. In prototypal inheritance, objects inherit 
+  directly from other objects. That means that classes are not needed and, thus, 
+  JS does not have them (Well, unless you're talking about the rather 
+  <a href="http://stackoverflow.com/questions/1728984/class-keyword-in-javascript">unpopular JavaScript 2.0)</a>. 
+  If you need an object and want it to exhibit class-like features, all you need to 
+  do is write the object.</p>
+  
+  <pre><code>var x = {
+  name: "Object",
+  property1: true,
+  property2: 6
+};</code></pre>
+
+  <p>So if an object creates another object, a link is created. This process leads 
+  to there being a chain of objects that forms a hierarchy. If you ask for a property 
+  from an object and it doesn't have it, the object will ask its parent object for 
+  the property, and so on. There aren't really clear advantages to prototypal inheritance 
+  over classical inheritance - it's just two ways to getting a language to reuse code.</p>
+  
+  <p>It's also important to state that JS is not the only prototype based language 
+  out there. Modules/packages of Perl, Python, R, and many more also use it.</p>
+  
+  <h3>Further Reading</h3>
+  
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">
+    Inheritance and the Prototype Chain
+  </a></p>
+  
+  <p><a href="http://www.htmlgoodies.com/html5/tutorials/javascript-prototypical-inheritance-explained.html#fbid=hSxJZXfFYOQ">
+    JavaScript Prototypal Inheritance Explained
+  </a></p>
+  
+  <p><a href="https://www.quora.com/What-is-prototypal-inheritance">
+    Quora: What is prototypal inheritance?
+  </a></p>
+  
+  <p><a href="https://msdn.microsoft.com/en-us/library/hh924508(v=vs.94).aspx">
+    Prototypes and Prototypal Inheritance
+  </a></p>
+  
+</section>
