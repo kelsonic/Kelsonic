@@ -1,9 +1,13 @@
 <div class="row">
-  <div class="col s12 m8 offset-m2 l6 offset-l3">
-    <h2 class="center">Title: <span class="blog-title"><%= @blog.title %></span></h2>
+  <div class="blog-post-bg z-depth-1 col s12 m8 offset-m2 l6 offset-l3">
+    <h2 class="center"><span class="title-text">Title:</span> 
+      <span class="blog-title"><%= @blog.title %></span>
+    </h2>
     <p class="center"><%= @blog.created_at.strftime("%B %d, %Y") %></p>
     <%= @blog.content.html_safe %>
   </div>
 </div>
 
-<%= link_to 'Back', blogs_path %>
+<div class="row col s12 center">
+  <%= link_to 'Back to Blog Posts', blogs_path, class: "btn waves-effect waves-light" %>
+</div>
