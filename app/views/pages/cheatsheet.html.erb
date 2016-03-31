@@ -1,0 +1,126 @@
+<div class="row">
+  <div class="blog-post-bg z-depth-1 col s12 m8 offset-m2 l6 offset-l3">
+    <h2 class="center"> 
+      <span class="blog-title">JS Arrays Cheatsheet</span>
+    </h2>
+    <p class="center">3 Useful JS Array Methods</p>
+    <section class="blog-font blog-post">
+      
+      <h3>array.concat</h3>
+      
+      <p>I learn best through examples, and I think the examples for most of these methods explain 
+      themselves. Where I feel that they don't, I will explain more in-depth what they are doing.</p>
+      
+      <p>Concatenating two arrays:</p>
+      
+      <pre><code>var alpha = ['a', 'b', 'c'],
+    numeric = [1, 2, 3];
+
+var alphaNumeric = alpha.concat(numeric);
+
+console.log(alphaNumeric); // Result: ['a', 'b', 'c', 1, 2, 3]</code></pre>
+      
+      <p>Concatenating three arrays:</p>
+      
+      <pre><code>var num1 = [1, 2, 3],
+    num2 = [4, 5, 6],
+    num3 = [7, 8, 9];
+
+var nums = num1.concat(num2, num3);
+
+console.log(nums); // Result: [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
+    
+      <p>Concatenating values into an array:</p>
+      
+      <pre><code>var alpha = ['a', 'b', 'c'];
+
+var alphaNumeric = alpha.concat(1, [2, 3]);
+
+console.log(alphaNumeric); 
+// Result: ['a', 'b', 'c', 1, 2, 3]</code></pre>
+      
+      <h3>array.filter</h3>
+      
+      <p>This could be a bit confusing if you're coming from a Ruby background, but filter 
+      will actually take a function as an argument, which you have to create. The good news 
+      is, however, that when you make the function to filter the array how you want, all you 
+      need is to use the .filter method with the function as its parameter to filter your array.</p>
+      
+      <p>Filtering out all small values:</p>
+      
+      <pre><code>function isBigEnough(value) {
+  return value >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]</code></pre>
+
+      <p>Or a bit bigger of an example, here is filtering invalid entries from JSON:</p>
+
+      <pre><code>var arr = [
+  { id: 15 },
+  { id: -1 },
+  { id: 0 },
+  { id: 3 },
+  { id: 12.2 },
+  { },
+  { id: null },
+  { id: NaN },
+  { id: 'undefined' }
+];
+
+var invalidEntries = 0;
+
+function filterByID(obj) {
+  if ('id' in obj && typeof(obj.id) === 'number' && !isNaN(obj.id)) {
+    return true;
+  } else {
+    invalidEntries++;
+    return false;
+  }
+}
+
+var arrByID = arr.filter(filterByID);
+
+console.log('Filtered Array\n', arrByID); 
+// Filtered Array
+// [{ id: 15 }, { id: -1 }, { id: 0 }, { id: 3 }, { id: 12.2 }]
+
+console.log('Number of Invalid Entries = ', invalidEntries); 
+// Number of Invalid Entries = 4</code></pre>
+
+      <h3>array.map</h3>
+      
+      <p>Similar to .filter, the .map method takes a function as its argument.</p>
+      
+      <p>Mapping an array of numbers to an array of their square roots:</p>
+      
+      <pre><code>var numbers = [1, 4, 9];
+var roots = numbers.map(Math.sqrt);
+// roots is now [1, 2, 3], numbers is still [1, 4, 9]</code></pre>
+
+      <p>Using map to reformat objects in an array:</p>
+      
+      <pre><code>var kvArray = [{key:1, value:10}, {key:2, value:20}, {key:3, value: 30}];
+var reformattedArray = kvArray.map(function(obj){ 
+   var rObj = {};
+   rObj[obj.key] = obj.value;
+   return rObj;
+});
+// reformattedArray is now [{1:10}, {2:20}, {3:30}], 
+// kvArray is still [{key:1, value:10}, {key:2, value:20}, {key:3, value: 30}]</code></pre>
+
+      <p>You can also build a function within the .map method, such as:</p>
+      
+      <pre><code>var numbers = [1, 4, 9];
+var doubles = numbers.map(function(num) {
+  return num * 2;
+});
+// doubles is now [2, 8, 18]. numbers is still [1, 4, 9]</code></pre>
+
+      <h3>Discover more JS methods!</h3>
+      
+      <p class="center"><%= link_to "DevDocs.io", "http://devdocs.io/" %></p>
+      
+    </section>
+  </div>
+</div>

@@ -6,6 +6,9 @@ class PagesController < ApplicationController
   def devbootcamp
   end
   
+  def cheatsheet
+  end
+  
   def rails
     @projects = Project.all
   end
