@@ -24,9 +24,15 @@ strong {
   font-weight: bold;
 }
 
-.blog-post h3 {
-  text-align: center;
-  color: #03a9f4;
+.blog-post {
+  ol li {
+    font-size: inherit !important;
+    padding-bottom: 1.5em !important;
+  }
+  h3 {
+    text-align: center;
+    color: #03a9f4;
+  }
 }
 
 .blog-post-bg {
