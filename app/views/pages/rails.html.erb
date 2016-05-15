@@ -17,30 +17,8 @@
           
           <!-- Projects -->
           <% @rails_projects.each do |project| %>
-            <div class="row">
-              <div class="col s12">
-                <hr/>
-                <br/>
-                <div class="col s12 l5 flow-text center">
-                  <h3 class="project-header red-text text-darken-2"><%= project.title %></h3>
-                  <p class="published">Published <%= project.month %></p>
-                  <p class="project-description"><%= project.description %></p>
-                  <ol>
-                    <% project.points.each do |point| %>
-                      <li><%= point.body %></li>
-                    <% end %>
-                  </ol>
-                  <ul>
-                    <li><i class="fa fa-github"></i> <%= link_to "GitHub Repository", project.git_link %></li>
-                  </ul>
-                </div>
-                <div class="col s12 l7">
-                  <%= link_to image_tag(project.image, class: "responsive-img"), project.live_link, target: "_blank" %>
-                </div>
-              </div>
-            </div>
+            <%= render 'projects', project: project %>
           <% end %>
-          <!--End Projects-->
           
         </div>
       </div>
