@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   end
   
   def rails
-    @projects = Project.all
+    @projects = Project.all.sort_by {|project| project.launched}.reverse
   end
   
   def videogames
