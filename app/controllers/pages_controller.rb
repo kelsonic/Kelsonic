@@ -18,10 +18,4 @@ class PagesController < ApplicationController
     @games = Game.all
   end
   
-  def about
-  end
-  
-  def blog
-  end
-  
 end
