@@ -1,17 +1,19 @@
 class PagesController < ApplicationController
   
+  include ProjectsHelper
+  
   def home
   end
   
   def devbootcamp
-    @bootcamp_projects = Project.all.select {|project| project.bootcamp == true}
+    @bootcamp_projects = bootcamp_projects
   end
   
   def cheatsheet
   end
   
   def rails
-    @projects = Project.all.select {|project| project.category == "Rails"}.sort_by {|project| project.launched}.reverse
+    @rails_projects = rails_projects
   end
   
   def videogames
