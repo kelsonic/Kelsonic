@@ -8,6 +8,6 @@ class Project < ActiveRecord::Base
   validates :git_link, length: { minimum: 5, maximum: 100 }
   validates :live_link, length: { minimum: 5, maximum: 100 }
   validates :image, presence: true
-  validates :month, presence: true, length: { minimum: 9, maximum: 20 }
+  validates :month, presence: true, length: { minimum: 8, maximum: 20 }
   
 end
