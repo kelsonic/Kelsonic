@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160515211119) do
+ActiveRecord::Schema.define(version: 20160515214737) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20160515211119) do
     t.datetime "updated_at"
     t.string   "month"
     t.string   "category"
+    t.boolean  "bootcamp",    default: false
   end
 
   create_table "skills", force: :cascade do |t|
