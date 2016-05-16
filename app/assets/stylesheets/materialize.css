@@ -2662,7 +2662,7 @@ ul li {
 }
 
 .divider {
-  height: 1px;
+  height: 3px;
   overflow: hidden;
   background-color: #e0e0e0;
 }

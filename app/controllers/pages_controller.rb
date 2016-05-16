@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   include ProjectsHelper
   
   def home
+    @top_skills = Skill.all.sort_by {|skill| skill.num_of_projects}.reverse.take(5)
   end
   
   def devbootcamp
