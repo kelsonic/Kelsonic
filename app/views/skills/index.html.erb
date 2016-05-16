@@ -177,7 +177,7 @@
       <div class="card orange">
         <div class="card-content white-text">
           <div class="card-title center">
-            Tech Skills
+            Technical Skills
           </div>
           <table class="highlight centered">
             <thead>
@@ -188,10 +188,10 @@
             </thead>
     
             <tbody>
-              <% @skills.sort_by{|item| item.skill}.each do |skill| %>
+              <% @skills.each do |skill| %>
                 <tr>
                   <td><%= skill.skill %></td>
-                  <td><%= skill.num_of_projects %></td>
+                  <td><%= skill.num_of_projects %><%= "+" if skill.num_of_projects.to_i >= 10 %></td>
                 </tr>
               <% end %>
             </tbody>

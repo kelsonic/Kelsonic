@@ -41,7 +41,7 @@ Check out Kelsonic's Rails projects, Unity games, or the blog.">
             <% @top_skills.each do |skill| %>
               <tr>
                 <td><%= skill.skill %></td>
-                <td><%= skill.num_of_projects %></td>
+                <td><%= skill.num_of_projects %><%= "+" if skill.num_of_projects.to_i >= 10 %></td>
               </tr>
             <% end %>
           </tbody>

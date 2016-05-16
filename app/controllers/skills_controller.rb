@@ -4,7 +4,7 @@ class SkillsController < ApplicationController
   # GET /skills
   # GET /skills.json
   def index
-    @skills = Skill.all
+    @skills = Skill.all.sort_by {|skill| skill.num_of_projects.to_i }.reverse
   end
 
   # GET /skills/1
