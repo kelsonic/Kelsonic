@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   
   def home
     @top_skills = top_skills_except_html_css
+    @random_project = Project.all.sample
   end
   
   def devbootcamp

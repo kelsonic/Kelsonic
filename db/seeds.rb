@@ -1,3 +1,10 @@
+# Rails Projects
+how2bee = Project.create(title: "How 2 Bee", description: "Learn about beekeeping from over 20+ articles and over 40,000 words of content.", launched: "2016-05-16", git_link: "https://bitbucket.org/", live_link: "http://www.how2bee.com/", image: "how2bee.jpg", month: "May 2016", category: "Rails", bootcamp: true)
+how2bee.points.create(body: "Integrated Materialize front-end framework")
+how2bee.points.create(body: "Built contact, user authentication, and article features")
+how2bee.points.create(body: "Deployed with Heroku")
+how2bee.points.create(body: "Integrated Google's reCAPTCHA API for user auth")
+
 # SKILLS
 
 Skill.create(skill: "AJAX", num_of_projects: "6")

@@ -16,7 +16,9 @@
           
           <!-- Projects -->
           <% @bootcamp_projects.each do |project| %>
-            <%= render 'projects', project: project %>
+            <hr/>
+            <br/>
+            <%= render 'project', project: project %>
           <% end %>
           
         </div>
