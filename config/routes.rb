@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   post '/login', to: 'logins#create'
   get '/logout', to: 'logins#destroy'
   
-  resources :blogs
+  # resources :blogs
   
 end
