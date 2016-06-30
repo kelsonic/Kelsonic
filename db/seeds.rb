@@ -334,3 +334,222 @@ minidriver.points.create!(body: "Used GPIO pins to connect to camera, ultrasonic
 minidriver.points.create!(body: "Trained Haar cascade classifier with OpenCV to recognize stop signs in video frames.")
 minidriver.points.create!(body: "Wrote lane detection algorithm in Python with Numpy and MatPlotLib libraries.")
 minidriver.points.create!(body: "Utilized TCP server, websockets, and multithreading.")
+
+
+
+# ================================
+# SKILLS
+
+
+# Languages
+
+Skill.create!(
+  skill: "JavaScript",
+  rating: 5,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "Ruby",
+  rating: 5,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "Python",
+  rating: 4,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "C#",
+  rating: 3,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "Jade",
+  rating: 4,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "Handlebars",
+  rating: 4,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "HAML",
+  rating: 4,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "LESS",
+  rating: 5,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "SASS",
+  rating: 4,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "HTML5",
+  rating: 5,
+  skill_type: "Languages"
+)
+
+Skill.create!(
+  skill: "CSS3",
+  rating: 5,
+  skill_type: "Languages"
+)
+
+
+# Frameworks
+
+Skill.create!(
+  skill: "Ruby on Rails",
+  rating: 5,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Sinatra",
+  rating: 5,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Express.js",
+  rating: 5,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Node.js",
+  rating: 5,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Materialize",
+  rating: 5,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Bootstrap",
+  rating: 4,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "React",
+  rating: 4,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Angular2",
+  rating: 3,
+  skill_type: "Frameworks"
+)
+
+Skill.create!(
+  skill: "Unity3D",
+  rating: 4,
+  skill_type: "Frameworks"
+)
+
+
+# Libraries
+
+Skill.create!(
+  skill: "jQuery",
+  rating: 5,
+  skill_type: "Libraries"
+)
+
+Skill.create!(
+  skill: "Deep Learning",
+  rating: 4,
+  skill_type: "Libraries"
+)
+
+Skill.create!(
+  skill: "REST APIs",
+  rating: 5,
+  skill_type: "Libraries"
+)
+
+Skill.create!(
+  skill: "AJAX",
+  rating: 5,
+  skill_type: "Libraries"
+)
+
+
+# Databases
+
+Skill.create!(
+  skill: "SQLite3",
+  rating: 5,
+  skill_type: "Databases"
+
+)
+
+Skill.create!(
+  skill: "PostgreSQL",
+  rating: 5,
+  skill_type: "Databases"
+)
+
+Skill.create!(
+  skill: "MongoDB",
+  rating: 5,
+  skill_type: "Databases"
+)
+
+
+# Other
+
+Skill.create!(
+  skill: "Git",
+  rating: 5,
+  skill_type: "Other Skills"
+)
+
+Skill.create!(
+  skill: "TDD",
+  rating: 4,
+  skill_type: "Other Skills"
+)
+
+Skill.create!(
+  skill: "BDD",
+  rating: 5,
+  skill_type: "Other Skills"
+)
+
+Skill.create!(
+  skill: "MVC",
+  rating: 5,
+  skill_type: "Other Skills"
+)
+
+Skill.create!(
+  skill: "AWS",
+  rating: 4,
+  skill_type: "Other Skills"
+)
+
+Skill.create!(
+  skill: "Heroku",
+  rating: 5,
+  skill_type: "Other Skills"
+)

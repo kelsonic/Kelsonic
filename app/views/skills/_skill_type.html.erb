@@ -1,0 +1,30 @@
+<!--Skill Table-->
+<div class="row">
+  <div class="col s12 m8 offset-m2">
+    <div class="card orange">
+      <div class="card-content white-text">
+        <div class="card-title center">
+          <% p skills %>
+          <%= skills.first.skill_type %>
+        </div>
+        <table class="highlight centered">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <% skills.each do |skill| %>
+              <tr>
+                <td><%= skill.skill %></td>
+                <td><%= gen_stars(skill.rating).html_safe %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

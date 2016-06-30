@@ -7,8 +7,4 @@ Rails.application.routes.draw do
   # Skills index action
   get '/about', to: 'skills#index'
   
-  get '/login', to: 'logins#new'
-  post '/login', to: 'logins#create'
-  get '/logout', to: 'logins#destroy'
-  
 end

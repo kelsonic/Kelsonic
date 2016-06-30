@@ -1,74 +1,30 @@
 class SkillsController < ApplicationController
-  before_action :set_skill, only: [:show, :edit, :update, :destroy]
 
-  # GET /skills
-  # GET /skills.json
   def index
-    @skills = Skill.all.sort_by {|skill| skill.num_of_projects.to_i }.reverse
-  end
 
-  # GET /skills/1
-  # GET /skills/1.json
-  def show
-  end
+    @languages, @frameworks, @libraries, @databases, @other = [], [], [], [], []
 
-  # GET /skills/new
-  def new
-    @skill = Skill.new
-  end
+    Skill.all.each do |skill| 
+      p skill
 
-  # GET /skills/1/edit
-  def edit
-  end
+      if skill.skill_type == "Languages"
+        @languages.push(skill)
 
-  # POST /skills
-  # POST /skills.json
-  def create
-    @skill = Skill.new(skill_params)
+      elsif skill.skill_type == "Frameworks"
+        @frameworks.push(skill)
 
-    respond_to do |format|
-      if @skill.save
-        format.html { redirect_to @skill, notice: 'Skill was successfully created.' }
-        format.json { render :show, status: :created, location: @skill }
+      elsif skill.skill_type == "Libraries"
+        @libraries.push(skill)
+
+      elsif skill.skill_type == "Databases"
+        @databases.push(skill)
+
       else
-        format.html { render :new }
-        format.json { render json: @skill.errors, status: :unprocessable_entity }
+        @other.push(skill)
+        
       end
     end
+    
   end
 
-  # PATCH/PUT /skills/1
-  # PATCH/PUT /skills/1.json
-  def update
-    respond_to do |format|
-      if @skill.update(skill_params)
-        format.html { redirect_to @skill, notice: 'Skill was successfully updated.' }
-        format.json { render :show, status: :ok, location: @skill }
-      else
-        format.html { render :edit }
-        format.json { render json: @skill.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /skills/1
-  # DELETE /skills/1.json
-  def destroy
-    @skill.destroy
-    respond_to do |format|
-      format.html { redirect_to skills_url, notice: 'Skill was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_skill
-      @skill = Skill.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def skill_params
-      params.require(:skill).permit(:skill, :num_of_projects, :hours)
-    end
 end

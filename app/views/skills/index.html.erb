@@ -171,34 +171,14 @@
     </div>
   </div>
   
-  <!--Skills Card-->
-  <div class="row">
-    <div class="col s12 m8 offset-m2">
-      <div class="card orange">
-        <div class="card-content white-text">
-          <div class="card-title center">
-            Technical Skills
-          </div>
-          <table class="highlight centered">
-            <thead>
-              <tr>
-                <th>Skill</th>
-                <th>Used in # of Projects</th>
-              </tr>
-            </thead>
-    
-            <tbody>
-              <% @skills.each do |skill| %>
-                <tr>
-                  <td><%= skill.skill %></td>
-                  <td><%= skill.num_of_projects %><%= "+" if skill.num_of_projects.to_i >= 10 %></td>
-                </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render 'skill_type', skills: @languages %>
+
+  <%= render 'skill_type', skills: @frameworks %>
+
+  <%= render 'skill_type', skills: @libraries %>
+
+  <%= render 'skill_type', skills: @databases %>
+
+  <%= render 'skill_type', skills: @other %>
   
 </section>
