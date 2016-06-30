@@ -2,7 +2,7 @@
   <div class="col s12">
     <div class="col s12 l5 flow-text center">
       <h3 class="project-header red-text text-darken-2"><%= project.title %></h3>
-      <p class="published">Published <%= project.month %></p>
+      <p class="published">Published <%= project.launched.strftime('%B, %Y') %></p>
       <p class="published">Built with <span class="red-text"><%= project.category %></span></p>
       <p class="project-description"><%= project.description %></p>
       <ol>

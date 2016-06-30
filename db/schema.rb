@@ -11,45 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160516004119) do
-
-  create_table "blogs", force: :cascade do |t|
-    t.string   "title"
-    t.string   "content"
-    t.string   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "games", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.string   "image"
-    t.string   "live_link"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "month"
-  end
+ActiveRecord::Schema.define(version: 20160629151643) do
 
   create_table "points", force: :cascade do |t|
     t.string   "body"
     t.integer  "project_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
-    t.date     "launched"
     t.string   "git_link"
     t.string   "live_link"
     t.string   "image"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "month"
+    t.date     "launched"
     t.string   "category"
-    t.boolean  "bootcamp",    default: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "skills", force: :cascade do |t|
