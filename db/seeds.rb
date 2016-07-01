@@ -307,10 +307,10 @@ langsorts = Project.create!(
   category: "JavaScript"
 )
 
-langsorts.points.create!(body: "Built with Node.js, Express.js, and MongoDB.")
-langsorts.points.create!(body: "Integrated with MaterializeCSS front-end framework.")
-langsorts.points.create!(body: "Wrote Ruby and Javascript sorting algorithms.")
-langsorts.points.create!(body: "Built out templates using Jade.")
+langsorts.points.create!(body: "Built backend API (with seed data) using Node.js, Express.js, and MongoDB.")
+langsorts.points.create!(body: "Built client-side app with MaterializeCSS and React.")
+langsorts.points.create!(body: "Wrote Ruby and Javascript sorting algorithms, such as bubble / quick / merge sort.")
+langsorts.points.create!(body: "Built out each component using both React and Redux.")
 
 
 
