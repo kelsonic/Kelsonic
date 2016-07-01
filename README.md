@@ -1,14 +1,67 @@
-# Kelsonic
-### Welcome to the portfolio website of Kelson Adams
+[Kelsonic](/app/assets/images/readme-logo.png)
 
-Welcome to my portfolio website! After graduating from John Cabot University in 
-Rome, Italy with degrees in International Affairs and International Business, 
-I soon started getting into programming.
+## Summary
 
-Currently, I am a junior web developer attending Dev Bootcamp in San Francisco. 
-While I am only on the first week of DBC, I have followed several Udemy online bootcamps 
-for Ruby on Rails programming.
+By title, I am a full stack web developer. But, when you delve deeper, I am someone who genuinely loves learning - and fast. 
 
-### Connect
+In the past 6 months, I've built more than 20 projects and taken over 15 courses on programming.
 
-My email is kgadams93@gmail.com. Please feel free to reach out to me if you have any questions.
+I love when I am able to craft beautiful code and I am truly happiest when surrounded by an environment where everyone is keen on self-growth.
+
+## Technical Skills
+
+#### Programming Languages
+
+*Ruby
+*JavaScript (es5, es2015)
+*Python
+*C#
+
+#### Web Development
+
+*REST APIs
+*AJAX
+*HTML5
+*CSS3
+*jQuery
+
+#### Technologies
+
+*Rails
+*Node
+*Express
+*Keystone.JS
+*Sinatra
+*Angular2
+*React
+*Unity
+
+#### Databases & Tools
+
+*git
+*postgreSQL
+*SQLite3
+*MongoDB
+*Active Record
+*Mongoose
+
+#### Development Methodologies
+
+*Agile
+*Pair Programming
+
+#### APIs
+*SendGrid
+*Google
+*sentiment analysis
+*Stripe
+*Yahoo
+*Highcharts
+*OpenCV
+
+## Contact Me
+✉ Email: kgadams93@gmail.com
+✆ Phone: (415) 619 - 8667
+✧ LinkedIn: [in/kelsonic](www.linkedin.com/in/kelsonic)
+✧ GitHub: [kelsonic](www.github.com/kelsonic)
+✧ Website: [www.kelsonic.io](http://kelsonic.io)
