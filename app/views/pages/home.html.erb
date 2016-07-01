@@ -30,7 +30,7 @@
           <thead>
             <tr>
               <th>Skill</th>
-              <th>Used in # of Projects</th>
+              <th>rating</th>
             </tr>
           </thead>
   
@@ -38,7 +38,7 @@
             <% @top_skills.each do |skill| %>
               <tr>
                 <td><%= skill.skill %></td>
-                <td><%= skill.num_of_projects %><%= "+" if skill.num_of_projects.to_i >= 10 %></td>
+                <td><%= gen_stars(skill.rating) %></td>
               </tr>
             <% end %>
           </tbody>
