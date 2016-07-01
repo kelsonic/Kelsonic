@@ -231,7 +231,7 @@ filosofize = Project.create!(
   description: "Based off StackOverflow, Filosofize allows you to ponder and theorize others' ponders.",
   git_link: "https://github.com/kelsonic/filosofize",
   live_link: "http://filosofize.herokuapp.com/",
-  image: "Filosofize.jpg",
+  image: "filosofize.jpg",
   launched: "2016-05-02",
   category: "Sinatra"
 )
