@@ -1,4 +1,4 @@
-[Kelsonic](/app/assets/images/readme-logo.png)
+![Kelsonic](/app/assets/images/readme-logo.png)
 
 ## Summary
 
