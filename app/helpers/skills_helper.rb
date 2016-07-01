@@ -1,13 +1,11 @@
 module SkillsHelper
 
-  def top_skills_except_html_css # Redo this
-    sorted_skills = Skill.all.sort_by { |skill| skill.rating }
+  def top_skills
+    skill_names = ["Ruby on Rails", "Express.js", "Node.js", "React", "REST APIs", "MongoDB", "JavaScript", "Ruby"]
 
-    sorted_skills_without_html_css = sorted_skills.reverse.select do |skill| 
-      skill unless skill.skill == "HTML5" || skill.skill == "CSS3"
+    skill_names.map do |name|
+      Skill.find_by(skill: name)
     end
-
-    sorted_skills_without_html_css.take(5)
   end
 
   
@@ -15,16 +13,22 @@ module SkillsHelper
   def gen_stars(rating)
 
     if rating === 2
-      "&#9734; " * 2
+      stars = "&#9734; " * 2
+
     elsif rating === 3
-      "&#9734; " * 3
+      stars = "&#9734; " * 3
+
     elsif rating === 4
-      "&#9734; " * 4
+      stars = "&#9734; " * 4
+
     elsif rating === 5
-      "&#9734; " * 5
+      stars = "&#9734; " * 5
+
     else
-      "N/A"
+      stars = "N/A"
     end
+
+    stars.html_safe
 
   end
 
