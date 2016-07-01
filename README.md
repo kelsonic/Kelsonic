@@ -12,63 +12,62 @@ I love when I am able to craft beautiful code and I am truly happiest when surro
 
 #### Programming Languages
 
-*Ruby
-*JavaScript (es5, es2015)
-*Python
-*C#
+* Ruby
+* JavaScript (es5, es2015)
+* Python
+* C#
 
 #### Web Development
 
-*REST APIs
-*AJAX
-*HTML5
-*CSS3
-*jQuery
+* REST APIs
+* AJAX
+* HTML5
+* CSS3
+* jQuery
 
 #### Technologies
 
-*Rails
-*Node
-*Express
-*Keystone.JS
-*Sinatra
-*Angular2
-*React
-*Unity
+* Rails
+* Node
+* Express
+* Keystone.JS
+* Sinatra
+* Angular2
+* React
+* Unity
 
 #### Databases & Tools
 
-*git
-*postgreSQL
-*SQLite3
-*MongoDB
-*Active Record
-*Mongoose
+* git
+* postgreSQL
+* SQLite3
+* MongoDB
+* Active Record
+* Mongoose
 
 #### Development Methodologies
 
-*Agile
-*Pair Programming
+* Agile
+* Pair Programming
 
 #### APIs
-*SendGrid
-*Google
-*sentiment analysis
-*Stripe
-*Yahoo
-*Highcharts
-*OpenCV
+
+* SendGrid
+* Google
+* sentiment analysis
+* Stripe
+* Yahoo
+* Highcharts
+* OpenCV
 
 ## Contact Me
 
-<script src="https://use.fontawesome.com/6de5161287.js"></script>
+Email: kgadams93@gmail.com
 
-<i class="fa fa-envelope fa-1" aria-hidden="true"></i> kgadams93@gmail.com
+Phone: (415) 619 - 8667
 
-<i class="fa fa-phone fa-1" aria-hidden="true"></i> (415) 619 - 8667
+LinkedIn: [in/kelsonic](www.linkedin.com/in/kelsonic)
 
-<i class="fa fa-linkedin fa-1" aria-hidden="true"></i> [in/kelsonic](www.linkedin.com/in/kelsonic)
+GitHub: [kelsonic](www.github.com/kelsonic)
 
-<i class="fa fa-github fa-1" aria-hidden="true"></i> [kelsonic](www.github.com/kelsonic)
-
-<i class="fa fa-laptop fa-1" aria-hidden="true"></i> [www.kelsonic.io](http://kelsonic.io)
+Website: [www.kelsonic.io](http://kelsonic.io)
