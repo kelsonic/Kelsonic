@@ -2,24 +2,24 @@
   
   <!--Intro Card-->
   <div class="row">
-    <div class="col s12 m8 offset-m2">
+    <div class="col s12 m10 offset-m1 l8 offset-l2">
       <div class="card orange">
         <div class="card-content white-text">
           <div class="card-title center">
             Nice to meet you!
           </div>
           <p>
-            My name is Kelson. I am from the United States, but I have lived more 
+            My name is Kelson. I am a full stack web developer living in San Francisco. I have lived more 
             than 20% of my life in foreign countries and have visited 20+ nations. 
             Apart from programming languages, I speak English, Dutch, Spanish, 
             and Italian.
           </p>
           <br/>
           <div class="center">
-            <p>Feel free to check out my</p>
-            <%= link_to "rails projects", projects_path, 
-                    class: "waves-effect waves-orange btn light-blue" %>
-            <p>Otherwise, read on to learn a bit about me.</p>
+            <p class="flow-text">Click the images to learn more about me.</p>
+            <br/>
+            <p>Otherwise, you can also view my</p>
+            <p class="flow-text">competencies below.</p>
           </div>
         </div>
       </div>
@@ -170,15 +170,17 @@
       </div>
     </div>
   </div>
-  
+
+  <h2 class="light-blue-text center">My Competencies</h2>
+
   <%= render 'skill_type', skills: @languages %>
-
   <%= render 'skill_type', skills: @frameworks %>
-
   <%= render 'skill_type', skills: @libraries %>
-
   <%= render 'skill_type', skills: @databases %>
-
   <%= render 'skill_type', skills: @other %>
+
+  <div class="row center">
+    <%= link_to "View Projects", projects_path, class: "btn btn-large light-green waves-effect waves-orange" %>
+  </div>
   
 </section>
