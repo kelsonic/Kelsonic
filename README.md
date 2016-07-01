@@ -60,8 +60,15 @@ I love when I am able to craft beautiful code and I am truly happiest when surro
 *OpenCV
 
 ## Contact Me
-✉ Email: kgadams93@gmail.com
-✆ Phone: (415) 619 - 8667
-✧ LinkedIn: [in/kelsonic](www.linkedin.com/in/kelsonic)
-✧ GitHub: [kelsonic](www.github.com/kelsonic)
-✧ Website: [www.kelsonic.io](http://kelsonic.io)
+
+<script src="https://use.fontawesome.com/6de5161287.js"></script>
+
+<i class="fa fa-envelope fa-1" aria-hidden="true"></i> kgadams93@gmail.com
+
+<i class="fa fa-phone fa-1" aria-hidden="true"></i> (415) 619 - 8667
+
+<i class="fa fa-linkedin fa-1" aria-hidden="true"></i> [in/kelsonic](www.linkedin.com/in/kelsonic)
+
+<i class="fa fa-github fa-1" aria-hidden="true"></i> [kelsonic](www.github.com/kelsonic)
+
+<i class="fa fa-laptop fa-1" aria-hidden="true"></i> [www.kelsonic.io](http://kelsonic.io)
