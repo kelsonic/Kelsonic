@@ -2,16 +2,9 @@
   <div class="container">
     <div class="row">
       
-      <!--First Column Footer-->
-      <div class="col l2 offset-l3 s12 center">
-        <ul>
-          <li><%= link_to "Projects", projects_path, class: "white-text" %></li>
-          <li><%= link_to "About Me", about_path, class: "white-text" %></li>
-        </ul>
-      </div>
-      
-      <!--Second Column Footer-->
-      <div class="col l2 offset-l2 s12 center">
+      <div class="col s12 center">
+
+        <p><%= link_to "Projects", projects_path, class: "white-text" %> | <%= link_to "About Me", about_path, class: "white-text" %></p>
         
         <%= link_to "https://github.com/kelsonic" do %>
           <i class="fa fa-github fa-2x"></i>
@@ -46,7 +39,7 @@
   </div>
   <div class="footer-copyright light-blue darken-4 center">
     <div class="container">
-      Copyright &copy; 2016 Kelson Adams
+      Copyright &copy; 2016. Portfolio of Kelson Adams.
     </div>
   </div>
 </footer>
