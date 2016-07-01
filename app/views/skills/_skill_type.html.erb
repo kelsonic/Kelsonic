@@ -1,20 +1,19 @@
 <!--Skill Table-->
 <div class="row">
-  <div class="col s12 m8 offset-m2">
+  <div class="col s12 m10 offset-m1 l8 offset-l2">
     <div class="card orange">
       <div class="card-content white-text">
         <div class="card-title center">
-          <% p skills %>
           <%= skills.first.skill_type %>
         </div>
         <table class="highlight centered">
           <thead>
             <tr>
-              <th>Language</th>
+              <th>Skill</th>
               <th>Proficiency</th>
             </tr>
           </thead>
-  
+
           <tbody>
             <% skills.each do |skill| %>
               <tr>
