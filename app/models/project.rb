@@ -7,7 +7,7 @@ class Project < ActiveRecord::Base
   validates :git_link, length: { in: 5..100 }
   validates :live_link, length: { in: 5..100 }
   validates :image, presence: true
-  validates :category, presence: true, length: {in: 2..20}, format: { with: /\A[a-zA-Z ]+\z/,
+  validates :category, presence: true, length: {in: 2..60}, format: { with: /\A[a-zA-Z .,]+\z/,
     message: "only allows letters" }
   
 end

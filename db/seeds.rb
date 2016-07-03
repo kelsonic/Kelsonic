@@ -8,7 +8,7 @@ tutorup = Project.create!(
   live_link: "https://tutorup.herokuapp.com/",
   image: "TutorUp.png",
   launched: "2015-12-27",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 tutorup.points.create!(body: "Built contact form using MVC and implemented wrote validations.")
@@ -25,7 +25,7 @@ myvegrecipes = Project.create!(
   live_link: "https://myvegrecipes.herokuapp.com/",
   image: "MyVegRecipes.png",
   launched: "2016-01-02",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 myvegrecipes.points.create!(body: "Built chef profiles and recipes using associations and test driven development (TDD).")
@@ -42,7 +42,7 @@ mydiveblog = Project.create!(
   live_link: "https://mydiveblog.herokuapp.com/",
   image: "MyDiveBlog.png",
   launched: "2016-01-05",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 mydiveblog.points.create!(body: "Built database architecture using SQLite3.")
@@ -59,7 +59,7 @@ photoapp = Project.create!(
   live_link: "https://kel-photo-app.herokuapp.com/",
   image: "PhotoApp.png",
   launched: "2016-02-24",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 photoapp.points.create!(body: "Built user auth with customized Devise.")
@@ -76,7 +76,7 @@ socialstock = Project.create!(
   live_link: "http://socialstock.herokuapp.com/users/sign_in",
   image: "SocialStock.png",
   launched: "2016-01-19",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 socialstock.points.create!(body: "Used Yahoo API for tracking stock markets and tickers.")
@@ -93,7 +93,7 @@ crewpanda = Project.create!(
   live_link: "http://crewpanda.herokuapp.com/",
   image: "CrewPanda.png",
   launched: "2016-01-22",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 crewpanda.points.create!(body: "Utilized Milia for multi-tenancy and customized Devise for user authentication.")
@@ -110,7 +110,7 @@ techify = Project.create!(
   live_link: "http://techify.herokuapp.com",
   image: "Techify.jpg",
   launched: "2016-02-01",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 techify.points.create!(body: "Built using Behavior Driven Development (BDD) with Capybara.")
@@ -127,7 +127,7 @@ how2bee = Project.create!(
   live_link: "http://www.how2bee.com/",
   image: "how2bee.jpg",
   launched: "2016-03-04",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 how2bee.points.create!(body: "Built with Materialize front-end framework.")
@@ -144,7 +144,7 @@ exoplanet_analysis = Project.create!(
   live_link: "https://exoplanet-analysis.herokuapp.com/",
   image: "exoplanetAnalysis.jpg",
   launched: "2016-05-05",
-  category: "Ruby on Rails"
+  category: "Ruby on Rails, PostgreSQL"
 )
 
 exoplanet_analysis.points.create!(body: "Built in 2 days and deployed on Heroku.")
@@ -233,7 +233,7 @@ filosofize = Project.create!(
   live_link: "http://filosofize.herokuapp.com/",
   image: "filosofize.jpg",
   launched: "2016-05-02",
-  category: "Sinatra"
+  category: "Sinatra, PostgreSQL"
 )
 
 filosofize.points.create!(body: "Used polymorphic associations to reduce amount of tables in db.")
@@ -249,7 +249,7 @@ bftales = Project.create!(
   live_link: "http://bftales.com/", 
   image: "bftales.jpg", 
   launched: "2016-05-22", 
-  category: "Sinatra"
+  category: "Sinatra, PostgreSQL"
 )
 
 bftales.points.create!(body: "Integrated Text-Processing Sentiment Analysis API")
@@ -326,7 +326,7 @@ minidriver = Project.create!(
   live_link: "http://minidriver.herokuapp.com/",
   image: "miniDriver.jpg",
   launched: "2016-06-08",
-  category: "Machine Learning"
+  category: "Machine Learning, Raspberry Pi, Python"
 )
 
 minidriver.points.create!(body: "Built in 7 days with Python.")
