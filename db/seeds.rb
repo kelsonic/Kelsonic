@@ -260,7 +260,7 @@ bftales.points.create!(body: "Built RESTful routes and CRUD actions for pets, us
 
 
 # -----------------------------
-# Express
+# JavaScript
 
 # Todo REST API
 todorestapi = Project.create!(
@@ -270,7 +270,7 @@ todorestapi = Project.create!(
   live_link: "http://todorestapi.herokuapp.com/",
   image: "todoRESTapi.jpg",
   launched: "2016-06-5",
-  category: "JavaScript"
+  category: "Node.js, Express.js, PostgreSQL"
 )
 
 todorestapi.points.create!(body: "Built API in 2 days and built RESTful routes using Express.")
@@ -287,7 +287,7 @@ mlportal = Project.create!(
   live_link: "https://mlportal.herokuapp.com/",
   image: "mlportal.jpg",
   launched: "2016-06-10",
-  category: "JavaScript"
+  category: "Node.js, Express.js, Keystone.js, MongoDB"
 )
 
 mlportal.points.create!(body: "Built in 1 day and created node-effect on homepage with JavaScript.")
@@ -304,7 +304,7 @@ langsorts = Project.create!(
   live_link: "http://www.langsorts.com",
   image: "langsorts.jpg",
   launched: "2016-06-14",
-  category: "JavaScript"
+  category: "React, Node.js, Express.js, MongoDB"
 )
 
 langsorts.points.create!(body: "Built backend API (with seed data) using Node.js, Express.js, and MongoDB.")
