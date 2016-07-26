@@ -6,6 +6,7 @@ gem 'bcrypt'
 gem 'sitemap_generator'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
+gem 'coffee-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
