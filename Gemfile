@@ -11,11 +11,20 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+group :development do
+  gem 'web-console', '~> 2.0'
+end
+
+group :test do
+  gem 'shoulda'
+end
+
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'sqlite3'
   gem 'spring'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :production do
