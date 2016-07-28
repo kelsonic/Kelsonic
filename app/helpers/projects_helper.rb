@@ -11,6 +11,7 @@ module ProjectsHelper
       @projects = Project.where("category LIKE ?", '%Unity%').reverse
 
     else
+      params[:project_type] = nil
       @projects = Project.all.reverse
 
     end
