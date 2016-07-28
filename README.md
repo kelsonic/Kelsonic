@@ -2,7 +2,7 @@
 
 ## Summary
 
-By title, I am a full stack web developer. But, when you delve deeper, I am someone who genuinely loves learning - and fast. 
+I am a full stack web developer and I genuinely love learning new technologies - and fast.
 
 In the past 6 months, I've built more than 20 projects and taken over 15 courses on programming.
 
