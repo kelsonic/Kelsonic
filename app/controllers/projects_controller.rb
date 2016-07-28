@@ -4,14 +4,14 @@ class ProjectsController < ApplicationController
     if !params[:project_type]
       @projects = Project.all.reverse
 
-    elsif params[:project_type].downcase == 'javascript'
-      @projects = Project.where(category: ['JavaScript']).reverse
+    elsif params[:project_type] == 'JavaScript'
+      @projects = Project.where("category LIKE ?", '%js%').reverse
 
-    elsif params[:project_type].downcase == 'ruby on rails'
-      @projects = Project.where(category: ['Ruby on Rails']).reverse
+    elsif params[:project_type] == 'Ruby on Rails'
+      @projects = Project.where("category LIKE ?", '%Rails%').reverse
 
-    elsif params[:project_type].downcase == 'unity'
-      @projects = Project.where(category: ['Unity']).reverse
+    elsif params[:project_type] == 'Unity3D'
+      @projects = Project.where("category LIKE ?", '%Unity%').reverse
 
     else
       @projects = Project.all.reverse
