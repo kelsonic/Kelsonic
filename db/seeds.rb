@@ -450,8 +450,8 @@ Skill.create!(
 )
 
 Skill.create!(
-  skill: "React",
-  rating: 4,
+  skill: "React.js",
+  rating: 5,
   skill_type: "Frameworks"
 )
 
