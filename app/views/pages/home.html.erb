@@ -1,9 +1,14 @@
 <div id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
     <div class="container black-bg col s12 m8 offset-m2 l4 offset-l4">
-      <h1 class="header center light-blue-text text-lighten-2 kelsonic">Kelson Adams</h1>
       <div class="row center">
+
+        <h1 class="center grey-text text-lighten-2 kelsonic">Kelson Adams</h1>
+
+        <%= image_tag("profile_compressed.jpg", alt: "Kelsonic.io", class: "img-container responsive-img") %>
+        
         <h5 class="header white-text">Full-Stack Web Developer</h5>
+
       </div>
       <div class="row center">
         <%= link_to "Portfolio", projects_path, id: "download-button", class: "btn-large waves-effect waves-light orange lighten-1" %>
