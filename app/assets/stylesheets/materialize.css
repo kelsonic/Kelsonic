@@ -2948,7 +2948,7 @@ table.striped > tbody > tr > td {
 
 table.highlight > tbody > tr {
   transition: background-color .25s ease;
-  transition: color .3s ease;
+  transition: color 1s ease;
 }
 
 table.highlight > tbody > tr:hover {
