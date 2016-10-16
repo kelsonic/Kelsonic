@@ -12,8 +12,8 @@ class ProjectsController < ApplicationController
 
   private
 
-    def project_params
-      params.require(:project_type)
-    end
-  
+  def project_params
+    params.require(:project_type)
+  end
+
 end
