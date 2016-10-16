@@ -313,6 +313,23 @@ langsorts.points.create!(body: "Wrote Ruby and Javascript sorting algorithms, su
 langsorts.points.create!(body: "Built out each component using both React and Redux.")
 
 
+# Investorgate
+investorgate = Project.create!(
+  title: "Investorgate",
+  description: "Test your abilities as an investor on the public stock market.",
+  git_link: "https://github.com/kelsonic/investorgate",
+  live_link: "http://investorgate.trade",
+  image: "investorgate.jpg",
+  launched: "2016-08-11",
+  category: "React.js, Redux, Webpack, Babel"
+)
+
+investorgate.points.create!(body: "Implement React Highcarts for portfolio data visualization.")
+investorgate.points.create!(body: "Use Babel and Gulp to use ES6/7 React syntax.")
+investorgate.points.create!(body: "Implement redux middlewares for logging.")
+investorgate.points.create!(body: "Host website using cPanel and used LESS for pre-compiled stylesheets.")
+
+
 
 
 # -------------------------------
