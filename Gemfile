@@ -13,7 +13,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
   gem 'web-console', '~> 2.0'
-  gem 'rubocop'
+  gem 'rubocop', require: false
+  gem 'scss_lint', require: false
+  gem 'rails-erb-lint', require: false
 end
 
 group :test do
