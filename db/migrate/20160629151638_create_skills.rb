@@ -1,7 +1,7 @@
 class CreateSkills < ActiveRecord::Migration
   def change
     create_table :skills do |t|
-      t.string    'skill'
+      t.string    'name'
       t.integer   'rating'
       t.string    'skill_type'
 

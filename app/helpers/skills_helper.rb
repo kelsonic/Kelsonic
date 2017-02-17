@@ -1,19 +1,15 @@
 module SkillsHelper
   def top_skills
     skill_names = [
-      'Ruby on Rails',
       'React.js',
       'JavaScript',
+      'Ruby on Rails',
       'Ruby',
-      'Express.js',
-      'Node.js',
-      'MongoDB',
-      'PostgreSQL',
-      'REST APIs'
+      'Node.js'
     ]
 
-    skill_names.map do |name|
-      Skill.find_by(skill: name)
+    skill_names.map do |skill_name|
+      Skill.find_by(name: skill_name)
     end
   end
 

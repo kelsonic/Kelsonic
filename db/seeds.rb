@@ -311,6 +311,20 @@ investorgate.points.create!(body: 'Host website using cPanel and used LESS for p
 # -------------------------------
 # Machine Learning
 
+# Daily Bike Rental Neural Network
+dailyBikeRentalNeuralNetwork = Project.create!(
+  title: 'Bike Rental Neural Net',
+  description: 'Built a neural network to model daily bike rentals over a given period of time.',
+  git_link: 'https://github.com/kelsonic/dailyBikeRentalNeuralNetwork',
+  live_link: 'https://github.com/kelsonic/dailyBikeRentalNeuralNetwork',
+  image: 'bikeRentalNeuralNetwork.jpg',
+  launched: '2017-02-09',
+  category: 'Machine Learning, Deep Learning, Numpy, Python'
+)
+
+dailyBikeRentalNeuralNetwork.points.create!(body: 'Built neural network in 1 day with Python and Numpy.')
+dailyBikeRentalNeuralNetwork.points.create!(body: 'Achieved training loss of 0.044 and validation loss of 0.123')
+
 # miniDriver
 minidriver = Project.create!(
   title: 'miniDriver',
@@ -334,170 +348,235 @@ minidriver.points.create!(body: 'Utilized TCP server, websockets, and multithrea
 # Languages
 
 Skill.create!(
-  skill: 'JavaScript',
+  name: 'JavaScript',
   rating: 5,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'Ruby',
+  name: 'Ruby',
   rating: 5,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'Python',
+  name: 'Python',
   rating: 4,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'C#',
+  name: 'Golang',
   rating: 3,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'Jade',
-  rating: 4,
-  skill_type: 'Languages'
-)
-
-Skill.create!(
-  skill: 'Handlebars',
-  rating: 4,
-  skill_type: 'Languages'
-)
-
-Skill.create!(
-  skill: 'HAML',
-  rating: 4,
-  skill_type: 'Languages'
-)
-
-Skill.create!(
-  skill: 'LESS',
+  name: 'HTML5',
   rating: 5,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'SASS',
+  name: 'CSS3',
+  rating: 5,
+  skill_type: 'Languages'
+)
+
+Skill.create!(
+  name: 'Jade',
   rating: 4,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'HTML5',
+  name: 'Handlebars',
+  rating: 4,
+  skill_type: 'Languages'
+)
+
+Skill.create!(
+  name: 'HAML',
+  rating: 4,
+  skill_type: 'Languages'
+)
+
+Skill.create!(
+  name: 'LESS',
   rating: 5,
   skill_type: 'Languages'
 )
 
 Skill.create!(
-  skill: 'CSS3',
-  rating: 5,
+  name: 'SASS',
+  rating: 4,
   skill_type: 'Languages'
 )
 
 # Frameworks
 
 Skill.create!(
-  skill: 'Ruby on Rails',
+  name: 'React.js',
   rating: 5,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'Sinatra',
+  name: 'Ruby on Rails',
   rating: 5,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'Express.js',
+  name: 'Sinatra',
   rating: 5,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'Node.js',
+  name: 'Express.js',
   rating: 5,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'Materialize',
+  name: 'Node.js',
   rating: 5,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'Bootstrap',
+  name: 'Materialize',
+  rating: 5,
+  skill_type: 'Frameworks'
+)
+
+Skill.create!(
+  name: 'Bootstrap',
   rating: 4,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'React.js',
-  rating: 5,
+  name: 'Vue.js',
+  rating: 4,
   skill_type: 'Frameworks'
 )
 
 Skill.create!(
-  skill: 'Angular2',
+  name: 'Unity3D',
+  rating: 4,
+  skill_type: 'Frameworks'
+)
+
+Skill.create!(
+  name: 'Angular2',
   rating: 3,
-  skill_type: 'Frameworks'
-)
-
-Skill.create!(
-  skill: 'Unity3D',
-  rating: 4,
   skill_type: 'Frameworks'
 )
 
 # Libraries
 
 Skill.create!(
-  skill: 'jQuery',
+  name: 'Redux',
   rating: 5,
   skill_type: 'Libraries'
 )
 
 Skill.create!(
-  skill: 'Deep Learning',
+  name: 'Webpack',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'React-router',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Redux-saga',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'React-reselect',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Immutable.js',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Mocha',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Chai',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Sinon',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Enzyme',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Jest',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'jQuery',
+  rating: 5,
+  skill_type: 'Libraries'
+)
+
+Skill.create!(
+  name: 'Tensorflow',
   rating: 4,
   skill_type: 'Libraries'
 )
 
 Skill.create!(
-  skill: 'REST APIs',
-  rating: 5,
-  skill_type: 'Libraries'
-)
-
-Skill.create!(
-  skill: 'AJAX',
-  rating: 5,
+  name: 'OpenCV',
+  rating: 4,
   skill_type: 'Libraries'
 )
 
 # Databases
 
 Skill.create!(
-  skill: 'SQLite3',
-  rating: 5,
-  skill_type: 'Databases'
-
-)
-
-Skill.create!(
-  skill: 'PostgreSQL',
+  name: 'SQLite3',
   rating: 5,
   skill_type: 'Databases'
 )
 
 Skill.create!(
-  skill: 'MongoDB',
+  name: 'PostgreSQL',
+  rating: 5,
+  skill_type: 'Databases'
+)
+
+Skill.create!(
+  name: 'MongoDB',
   rating: 5,
   skill_type: 'Databases'
 )
@@ -505,37 +584,61 @@ Skill.create!(
 # Other
 
 Skill.create!(
-  skill: 'Git',
+  name: 'Git',
   rating: 5,
   skill_type: 'Other Skills'
 )
 
 Skill.create!(
-  skill: 'TDD',
+  name: 'TDD',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'BDD',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'MVC',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'AWS',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'Heroku',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'English',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'Italian',
+  rating: 5,
+  skill_type: 'Other Skills'
+)
+
+Skill.create!(
+  name: 'Dutch',
   rating: 4,
   skill_type: 'Other Skills'
 )
 
 Skill.create!(
-  skill: 'BDD',
-  rating: 5,
-  skill_type: 'Other Skills'
-)
-
-Skill.create!(
-  skill: 'MVC',
-  rating: 5,
-  skill_type: 'Other Skills'
-)
-
-Skill.create!(
-  skill: 'AWS',
-  rating: 4,
-  skill_type: 'Other Skills'
-)
-
-Skill.create!(
-  skill: 'Heroku',
-  rating: 5,
+  name: 'Spanish',
+  rating: 3,
   skill_type: 'Other Skills'
 )
