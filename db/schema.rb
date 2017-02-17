@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160629151638) do
+ActiveRecord::Schema.define(version: 20170217035506) do
+
+  create_table "lifecards", force: :cascade do |t|
+    t.string   "image"
+    t.string   "location"
+    t.string   "years"
+    t.string   "para1"
+    t.string   "para2"
+    t.string   "para3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "points", force: :cascade do |t|
     t.string   "body"
