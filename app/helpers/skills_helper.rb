@@ -16,13 +16,13 @@ module SkillsHelper
   def gen_stars(rating)
     case rating
     when 2
-      ('&#9734; ' * 2).safe_join
+      safe_join([('&#9734; ' * 2).html_safe])
     when 3
-      ('&#9734; ' * 3).safe_join
+      safe_join([('&#9734; ' * 3).html_safe])
     when 4
-      ('&#9734; ' * 4).safe_join
+      safe_join([('&#9734; ' * 4).html_safe])
     when 5
-      ('&#9734; ' * 5).safe_join
+      safe_join([('&#9734; ' * 5).html_safe])
     else
       'N/A'
     end
