@@ -312,7 +312,7 @@ investorgate.points.create!(body: 'Host website using cPanel and used LESS for p
 # Machine Learning
 
 # Daily Bike Rental Neural Network
-dailyBikeRentalNeuralNetwork = Project.create!(
+daily_bike_rental_neural_network = Project.create!(
   title: 'Bike Rental Neural Net',
   description: 'Built a neural network to model daily bike rentals over a given period of time.',
   git_link: 'https://github.com/kelsonic/dailyBikeRentalNeuralNetwork',
@@ -322,8 +322,8 @@ dailyBikeRentalNeuralNetwork = Project.create!(
   category: 'Machine Learning, Deep Learning, Numpy, Python'
 )
 
-dailyBikeRentalNeuralNetwork.points.create!(body: 'Built neural network in 1 day with Python and Numpy.')
-dailyBikeRentalNeuralNetwork.points.create!(body: 'Achieved training loss of 0.044 and validation loss of 0.123')
+daily_bike_rental_neural_network.points.create!(body: 'Built neural network in 1 day with Python and Numpy.')
+daily_bike_rental_neural_network.points.create!(body: 'Achieved training loss of 0.044 and validation loss of 0.123')
 
 # miniDriver
 minidriver = Project.create!(
@@ -662,7 +662,7 @@ Lifecard.create!(
   location: 'Italy',
   years: '2011-2015',
   para1: "I moved to Italy right after high school where I attended an American university in Rome. While I traveled all around Italy and 10+ other countries in Europe during my 4 years at the university, my studies were rigorous as I took enough courses to obtain both a Bachelor's of Arts in International Affairs and International Business.",
-  para2: "While in Italy, I taught myself Italian when socializing with friends there. I also met my Dutch wife in the process, so I decided to learn Dutch as well.",
+  para2: 'While in Italy, I taught myself Italian when socializing with friends there. I also met my Dutch wife in the process, so I decided to learn Dutch as well.',
   para3: "When I wasn't studying, I created How2Bee.com with my friend from Kenya. Despite the website getting over 12,000 visitors in less than 3 weeks, WordPress proved very frustrating to customize, which pushed me to reprogram the website using Ruby on Rails."
 )
 
@@ -685,5 +685,3 @@ Lifecard.create!(
   para2: 'At the end of the bootcamp, I had built over 20+ projects, most of which use different technologies that I had to learn in only a couple of days.',
   para3: 'For the final project, I was the team lead to build a self-driving RC car using recurrent neural networks, Raspberry Pis, Python, and many machine learning libraries.'
 )
-
-puts 'Seeds file ran: 100%'

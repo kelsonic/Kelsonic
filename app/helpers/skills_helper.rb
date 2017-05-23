@@ -14,19 +14,18 @@ module SkillsHelper
   end
 
   def gen_stars(rating)
-    stars =   case rating
-              when 2
-                '&#9734; ' * 2
-              when 3
-                '&#9734; ' * 3
-              when 4
-                '&#9734; ' * 4
-              when 5
-                '&#9734; ' * 5
-              else
-                'N/A'
-              end
-    stars.html_safe
+    case rating
+    when 2
+      ('&#9734; ' * 2).safe_join
+    when 3
+      ('&#9734; ' * 3).safe_join
+    when 4
+      ('&#9734; ' * 4).safe_join
+    when 5
+      ('&#9734; ' * 5).safe_join
+    else
+      'N/A'
+    end
   end
 
   def categorize_skills

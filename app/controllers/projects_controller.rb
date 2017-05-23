@@ -1,5 +1,4 @@
 class ProjectsController < ApplicationController
-
   include ProjectsHelper
 
   def index
@@ -15,5 +14,4 @@ class ProjectsController < ApplicationController
   def project_params
     params.require(:project_type)
   end
-
 end

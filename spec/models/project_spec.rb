@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Project, type: :model do
-  
   describe 'its points' do
     it { should have_many(:points).dependent(:destroy) }
   end
@@ -49,5 +48,4 @@ RSpec.describe Project, type: :model do
       should validate_length_of(:category).is_at_most(60)
     end
   end
-
 end

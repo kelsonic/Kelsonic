@@ -1,5 +1,4 @@
 module ProjectsHelper
-
   def assign_projects(project_type)
     if project_type == 'JavaScript'
       @projects = Project.where('category LIKE ?', '%js%').reverse
@@ -16,5 +15,4 @@ module ProjectsHelper
 
     end
   end
-
 end
