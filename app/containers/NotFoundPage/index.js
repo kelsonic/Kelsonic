@@ -9,12 +9,12 @@
  * the linting exception.
  */
 
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
 
-export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+class NotFound extends PureComponent {
   render() {
     return (
       <h1>
@@ -23,3 +23,5 @@ export default class NotFound extends React.PureComponent { // eslint-disable-li
     );
   }
 }
+
+export default NotFound;

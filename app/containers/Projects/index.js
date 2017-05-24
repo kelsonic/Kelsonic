@@ -4,7 +4,7 @@
  *
  */
 
-import React, { PropTypes } from 'react';
+import React, { PureComponent, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
@@ -12,7 +12,7 @@ import { createStructuredSelector } from 'reselect';
 import makeSelectProjects from './selectors';
 import messages from './messages';
 
-export class Projects extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+class Projects extends PureComponent {
   render() {
     return (
       <div>

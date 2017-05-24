@@ -9,16 +9,67 @@
  * the linting exception.
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+// Libraries
+import React, { PureComponent } from 'react';
+import React3 from 'react-three-renderer';
+import * as THREE from 'three';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+
+class HomePage extends PureComponent {
+  constructor(props, context) {
+    super(props, context);
+    this.cameraPosition = new THREE.Vector3(0, 0, 150);
+    this.state = {
+      earthRotation: new THREE.Euler(),
+    };
+    this.onAnimate = this.onAnimate.bind(this);
+  }
+
+  onAnimate() {
+    this.setState({
+      earthRotation: new THREE.Euler(
+        0,
+        this.state.earthRotation.y + 0.001,
+        // Tilt of the Earth is 23.5/360
+        0.0653
+      ),
+    });
+  }
+
   render() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <React3
+        height={height}
+        mainCamera="camera"
+        onAnimate={this.onAnimate}
+        width={width}
+      >
+        <scene>
+          <perspectiveCamera
+            name="camera"
+            fov={75}
+            aspect={width / height}
+            near={0.1}
+            far={1000}
+            position={this.cameraPosition}
+          />
+          <mesh rotation={this.state.earthRotation} >
+            <sphereGeometry
+              radius={50}
+              widthSegments={50}
+              heightSegments={50}
+            />
+            <meshBasicMaterial>
+              <texture url="earth-diffuse.jpg" />
+            </meshBasicMaterial>
+          </mesh>
+        </scene>
+      </React3>
     );
   }
 }
+
+export default HomePage;

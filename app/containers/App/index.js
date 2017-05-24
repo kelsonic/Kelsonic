@@ -11,12 +11,11 @@
  * the linting exception.
  */
 
-import React from 'react';
+import React, { PureComponent, PropTypes } from 'react';
 
-export default class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
+class App extends PureComponent {
   static propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
   };
 
   render() {
@@ -27,3 +26,5 @@ export default class App extends React.PureComponent { // eslint-disable-line re
     );
   }
 }
+
+export default App;
