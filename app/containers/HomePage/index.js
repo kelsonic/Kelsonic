@@ -12,6 +12,7 @@
 // Libraries
 import React, { PureComponent } from 'react';
 // External components
+import SideNav from 'components/SideNav';
 import SolarSystem from 'components/SolarSystem';
 
 
@@ -19,6 +20,7 @@ class HomePage extends PureComponent {
   render() {
     return (
       <div>
+        <SideNav />
         <SolarSystem />
       </div>
     );

@@ -17,7 +17,6 @@ const orthographicCameraName = 'orthographicCamera';
 const mainCameraName = 'mainCamera';
 const perspectiveCameraRotation = new THREE.Euler(0, Math.PI, 0);
 const orthographicCameraRotation = new THREE.Euler(0, Math.PI, 0);
-const spherePosition = new THREE.Vector3(0, 0, 150);
 
 
 class SolarSystem extends PureComponent {
@@ -26,7 +25,7 @@ class SolarSystem extends PureComponent {
     const r = Date.now() * 0.0005;
     this.state = {
       ...this.state,
-      earthPosition: new THREE.Vector3(Math.cos(r), Math.sin(r), Math.sin(r)).multiplyScalar(700),
+      earthPosition: new THREE.Vector3(Math.cos(r), 0, Math.sin(r)).multiplyScalar(700),
       moonPosition: new THREE.Vector3(70 * Math.cos(2 * r), 150, 70 * Math.sin(r)),
       activeCameraName: perspectiveCameraName,
       paused: false,
@@ -101,8 +100,8 @@ class SolarSystem extends PureComponent {
 
     this.setState({
       r,
-      earthPosition: new THREE.Vector3(Math.cos(r), Math.sin(r), Math.sin(r)).multiplyScalar(700),
-      moonPosition: new THREE.Vector3(560 * Math.cos(r), Math.sin(r), 560 * Math.sin(r)),
+      earthPosition: new THREE.Vector3(Math.cos(r), 0, Math.sin(r)).multiplyScalar(700),
+      moonPosition: new THREE.Vector3(300 * Math.sin(r), 0, 300 * Math.cos(r)),
     });
   }
 
@@ -176,7 +175,7 @@ class SolarSystem extends PureComponent {
                 fov={35 + (30 * Math.sin(0.5 * r))}
                 aspect={aspectRatio}
                 near={150}
-                far={earthPosition.length()}
+                far={earthPosition.length() + moonPosition.length()}
                 rotation={perspectiveCameraRotation}
               />
               <orthographicCamera
@@ -189,19 +188,6 @@ class SolarSystem extends PureComponent {
                 far={earthPosition.length()}
                 rotation={orthographicCameraRotation}
               />
-              <mesh
-                position={spherePosition}
-              >
-                <sphereGeometry
-                  radius={5}
-                  widthSegments={32}
-                  heightSegments={32}
-                />
-                <meshBasicMaterial
-                  color={0x0000ff}
-                  wireframe
-                />
-              </mesh>
             </object3D>
             <cameraHelper
               cameraName={this.state.activeCameraName}
@@ -223,7 +209,7 @@ class SolarSystem extends PureComponent {
                 position={moonPosition}
               >
                 <sphereGeometry
-                  radius={50}
+                  radius={28}
                   widthSegments={32}
                   heightSegments={32}
                 />
