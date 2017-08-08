@@ -3,36 +3,32 @@ import { Scene } from 'aframe-react';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 // Externals
-import BoxRotating from './components/BoxRotating';
-import Camera from './components/Camera';
-import Environment from './components/Environment';
+import Assets from './components/Assets';
+import Model from './components/Model';
 import Logo from './components/Logo';
+import SocialMediaLinks from './components/SocialMediaLinks';
+import Goggles from './components/Goggles';
+import InfoLeft from './components/InfoLeft';
+import InfoRight from './components/InfoRight';
+import CircleSurrounding from './components/CircleSurrounding';
+import Environment from './components/Environment';
+import Lighting from './components/Lighting';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { color: 'red' };
-    this.changeColor = this.changeColor.bind(this);
-  }
-
-  changeColor() {
-    const colors = ['red', 'orange', 'yellow', 'green', 'blue'];
-    this.setState({
-      color: colors[Math.floor(Math.random() * colors.length)]
-    });
-  }
-
   render () {
     return (
       <Scene>
-        <Environment />
+        <Assets />
+        <Model />
         <Logo />
-        <BoxRotating
-          click={this.changeColor}
-          color={this.state.color}
-        />
-        <Camera />
+        <SocialMediaLinks />
+        <Goggles />
+        <InfoLeft />
+        <InfoRight />
+        <CircleSurrounding />
+        <Environment />
+        <Lighting />
       </Scene>
     );
   }

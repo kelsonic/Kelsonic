@@ -1,12 +1,10 @@
-// Depencies
+// Dependencies
 import 'aframe';
-import 'aframe-environment-component';
-import { Entity } from 'aframe-react';
 import React from 'react';
 
 
-const Environment = () => (
-  <Entity environment="preset: starry" />
+const Enviornment = () => (
+  <a-sky color="#ECECEC"></a-sky>
 );
 
-export default Environment;
+export default Enviornment;

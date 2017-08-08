@@ -54,8 +54,6 @@ const SKILLS = [
     name: 'SASS',
     rating: 4,
   },
-
-  # Frameworks
   // React.js
   {
     name: 'React.js',
@@ -106,8 +104,6 @@ const SKILLS = [
     name: 'Angular2',
     rating: 3,
   },
-
-  # Libraries
   // Redux
   {
     name: 'Redux',
@@ -178,8 +174,6 @@ const SKILLS = [
     name: 'OpenCV',
     rating: 4,
   },
-
-  # Databases
   // SQLite3
   {
     name: 'SQLite3',
@@ -195,8 +189,6 @@ const SKILLS = [
     name: 'MongoDB',
     rating: 5,
   },
-
-  # Other
   // Git
   {
     name: 'Git',
