@@ -17,7 +17,7 @@ const Model = () => (
       position="-.35 0 .55"
       rotation="0 -20 0"
       scale="1.5 1.5 1.5"
-      src="#why-male-models"
+      src="#model"
     />
     <a-image
       rotation="-90 0 0"

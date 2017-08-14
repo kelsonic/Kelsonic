@@ -1,8 +1,7 @@
 // Dependencies
-import { Scene } from 'aframe-react';
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 // Externals
+import Scene from './components/Scene';
 import Assets from './components/Assets';
 import Model from './components/Model';
 import Logo from './components/Logo';
@@ -12,7 +11,8 @@ import InfoLeft from './components/InfoLeft';
 import InfoRight from './components/InfoRight';
 import CircleSurrounding from './components/CircleSurrounding';
 import Environment from './components/Environment';
-import Lighting from './components/Lighting';
+import LightingAmbient from './components/LightingAmbient';
+import LightingDirectional from './components/LightingDirectional';
 
 
 class App extends Component {
@@ -28,7 +28,8 @@ class App extends Component {
         <InfoRight />
         <CircleSurrounding />
         <Environment />
-        <Lighting />
+        <LightingAmbient />
+        <LightingDirectional />
       </Scene>
     );
   }

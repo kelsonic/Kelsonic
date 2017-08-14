@@ -7,7 +7,8 @@ const Goggles = () => (
   <a-cylinder
     color="#101010"
     height="0.02"
-    radius="0.8">
+    radius="0.8"
+  >
     <a-animation
       attribute="rotation"
       delay="1000"

@@ -13,7 +13,7 @@ const shoes = require('../assets/images/shoes.png');
 
 const Assets = () => (
   <a-assets>
-    <a-asset-item id="why-male-models" src={man} ></a-asset-item>
+    <a-asset-item id="model" src={man} ></a-asset-item>
     <img alt="fall" id="fall" src={fall} />
     <img alt="goggles" id="goggles" src={goggles} />
     <img alt="mozvr" id="mozvr" src={mozvr} />
