@@ -44,7 +44,6 @@ class Entity extends Component {
 
     // Update events.
     updateEventListeners(element, prevProps.events, props.events);
-
     // Update entity.
     updateAttributes(element, prevProps, props);
   }
@@ -145,9 +144,6 @@ class Entity extends Component {
     return element.setAttribute(propName, props[propName]);
   }
 
-  /**
-   * Render A-Frame DOM with ref: https://facebook.github.io/react/docs/refs-and-the-dom.html
-   */
   render() {
     const props = this.props;
     const elementName = this.isScene ? 'a-scene' : (props.primitive || 'a-entity');
@@ -167,7 +163,8 @@ class Entity extends Component {
         ...reactProps,
         ref: this.initEntity,
       },
-      props.children);
+      props.children,
+    );
   }
 }
 
